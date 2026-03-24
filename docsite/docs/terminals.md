@@ -28,6 +28,16 @@ You can create multiple named terminal sessions on the same resource. Each sessi
 
 Each terminal maintains a rolling 1 MiB output buffer. When you reconnect to an existing session, the history is replayed so you can see previous output.
 
+## CLI
+
+Terminal sessions can also be accessed from the command line using the [Komodo CLI](./ecosystem/cli.mdx#terminals).
+
+- `km ssh <server>` — open a shell on a server
+- `km exec <container> <shell>` — exec into a container
+- `km attach <container>` — attach to a container's main process
+
+Press **Alt+Q** to disconnect from any CLI terminal session while the session itself stays running.
+
 ## Execute Terminal
 
 The `execute_terminal` API method allows you to run a command on a terminal and stream the output back over HTTP. This is useful for:
