@@ -12,6 +12,7 @@ COPY ./client/periphery ./client/periphery
 COPY ./bin/core ./bin/core
 COPY ./bin/periphery ./bin/periphery
 COPY ./bin/cli ./bin/cli
+COPY ./xtask ./xtask
 
 # Compile bin
 RUN \

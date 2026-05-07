@@ -11,6 +11,7 @@ COPY ./client/core/rs ./client/core/rs
 COPY ./client/periphery ./client/periphery
 COPY ./bin/core ./bin/core
 COPY ./bin/cli ./bin/cli
+COPY ./xtask ./xtask
 
 # Compile app
 RUN cargo build -p komodo_core --release && \
